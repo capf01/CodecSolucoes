@@ -101,6 +101,7 @@
     margin-bottom: 3rem;
     font-weight: 700;
     letter-spacing: -1px;
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -121,6 +122,7 @@
     position: absolute;
     bottom: -10px;
     left: 50%;
+    font-family: Arial, Helvetica, sans-serif;
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
@@ -144,6 +146,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
   
@@ -208,6 +211,7 @@
   .name {
     font-size: 1.5rem;
     color: #61b0ff;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 1rem 0 0.5rem;
     font-weight: 700;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);

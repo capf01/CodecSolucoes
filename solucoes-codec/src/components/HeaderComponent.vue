@@ -219,7 +219,7 @@
   }
   
   .menu-item:hover {
-    color: #0a5cb9;
+    color: #0076fd;
   }
   
   /* Estilo padrão: botão hambúrguer oculto em telas maiores */

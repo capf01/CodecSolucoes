@@ -44,6 +44,7 @@
   }
   .section-title {
     font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
     color: #618eff;
     margin-bottom: 3rem;
     font-weight: 700;

@@ -1,9 +1,10 @@
 <template>
     <section id="about" class="about">
-      <h2 class="about-title">Sobre Nós</h2>
+      <h2 class="section-title">Sobre Nós</h2>
       <div class="about-content">
         <p class="about-text">
-          A CODEC Soluções Tecnológicas é especializada em oferecer soluções inovadoras e personalizadas para empresas de todos os tamanhos. Nossa missão é transformar ideias em realidade através da tecnologia.
+          A CODEC Soluções Tecnológicas é especializada em oferecer soluções inovadoras e personalizadas para empresas de todos os tamanhos. 
+          Nossa missão é transformar ideias em realidade através da tecnologia.
         </p>
         <img 
           src="@/assets/images/image-removebg-preview (16).png" 
@@ -22,19 +23,42 @@
   </script>
   
   <style scoped>
-  .about {
+   @keyframes floatTitle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
+  .section-title {
+    font-size: 3rem;
+    color: #618eff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    position: relative;
+    display: inline-block;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: floatTitle 3s ease-in-out infinite;
+  }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #618eff;
+    border-radius: 2px;
+  }
+ .about {
     padding: 60px 20px;
     text-align: center;
     background: linear-gradient(45deg, #1e1e2f 0%, #2a2a40 100%);
     color: #ffffff;
-  }
-  
-  .about-title {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
   }
   
   .about-content {
@@ -51,7 +75,8 @@
     font-size: 1.2rem;
     line-height: 1.8;
     color: #e0e0e0;
-    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
     max-width: 600px;
   }
   
