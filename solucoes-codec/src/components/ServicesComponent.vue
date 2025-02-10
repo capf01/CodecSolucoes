@@ -1,6 +1,6 @@
 <template>
     <section id="services" class="services">
-      <h2 class="services-title">Nossos Serviços</h2>
+      <h2 class="section-title">Nossos Serviços</h2>
       
       <div class="services-grid">
         <div class="service-card">
@@ -34,10 +34,40 @@
   </script>
   
   <style scoped>
+  @keyframes floatTitle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
+  .section-title {
+    font-size: 3rem;
+    color: #618eff;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    position: relative;
+    display: inline-block;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: floatTitle 3s ease-in-out infinite;
+  }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #618eff;
+    border-radius: 2px;
+  }
   .services {
     padding: 60px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #5d5b5b, #0a0a0a);
+    background: linear-gradient(45deg, #1e1e2f 0%, #2a2a40 100%);
     color: #fff;
   }
   

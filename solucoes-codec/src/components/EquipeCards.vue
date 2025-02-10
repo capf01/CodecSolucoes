@@ -112,7 +112,7 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-10px);
+      transform: translateY(-40px);
     }
   }
   
@@ -167,11 +167,11 @@
     width: 180px;
     height: 180px;
     margin: 0 auto 1.5rem;
-    border-radius: 50%;
+    border-radius: 100%;
     overflow: hidden;
     border: 4px solid #0048ff;
     box-shadow: 0 8px 20px rgba(255, 111, 97, 0.3);
-    animation: glow 2s infinite alternate;
+    animation: glow 3s infinite alternate;
   }
   
   @keyframes glow {

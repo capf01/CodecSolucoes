@@ -111,8 +111,8 @@
             canvas.width
           );
   
-          gradient.addColorStop(0, "rgba(5, 25, 25, 1)");
-          gradient.addColorStop(1, "rgba(5, 5, 5, 1)");
+          gradient.addColorStop(0, "rgba(1, 1, 1, 1)");
+          gradient.addColorStop(1, "rgba(35, 35, 35, 1)");
   
           ctx.fillStyle = gradient;
           ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -231,8 +231,8 @@
   /* Exibe o botão hambúrguer em telas menores que 700px */
   @media (max-width: 700px) {
     .logo1 {
-      width: 100%;
-      height: 100%;
+      width: 80px;
+      height: 80px;
       object-fit: cover;
     }
   
