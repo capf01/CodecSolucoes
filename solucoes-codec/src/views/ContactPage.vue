@@ -13,6 +13,8 @@
           height="500"
           src="https://www.google.com/maps/embed/v1/place?q=Rua+Salto+Santiago,+Raiz,+Manaus+-+AM,+CEP+69028270&key=AIzaSyDHZCPY-nZ3vozFF32STNyGywCeUoF5b1w" frameborder="0"
           style="border:0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
           allowfullscreen
         ></iframe>
       </div>
@@ -70,7 +72,7 @@ export default {
 </script>
 
 <style scoped>
-
+*{font-family: Arial, Helvetica, sans-serif;}
 @keyframes floatTitle {
     0%, 100% {
       transform: translateY(0);
@@ -167,8 +169,8 @@ p {
 .contact-form h3 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #ff8c00; /* Laranja neon */
-  text-shadow: 0 0 10px rgba(255, 140, 0, 0.8);
+  color: #0055ff; /* Laranja neon */
+  text-shadow: 0 0 10px rgba(4, 0, 255, 0.8);
 }
 
 .contact-form input,
@@ -199,11 +201,11 @@ p {
   cursor: pointer;
   font-size: 16px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(255, 0, 51, 0.5);
+  box-shadow: 0 4px 10px rgba(7, 2, 165, 0.5);
 }
 
 .contact-form button:hover {
-  background: linear-gradient(145deg, #ff8c00, #ff0033);
+  background: linear-gradient(145deg, #0004ff, #4000ff);
   box-shadow: 0 6px 15px rgba(255, 0, 51, 0.8);
   transform: translateY(-2px);
 }
@@ -214,7 +216,7 @@ p {
     text-shadow: 0 0 10px rgba(1, 147, 251, 0.8), 0 0 20px rgba(77, 175, 255, 0.6);
   }
   100% {
-    text-shadow: 0 0 15px rgb(77, 130, 255), 0 0 150px rgba(77, 95, 255, 0.8);
+    text-shadow: 0 0 15px rgb(77, 130, 255), 0 0 150px rgba(65, 81, 223, 0.8);
   }
 }
 </style>

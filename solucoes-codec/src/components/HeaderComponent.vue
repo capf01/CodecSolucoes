@@ -244,7 +244,7 @@
       font-size: 1.5rem;
       background: none;
       border: none;
-      color: #ffffff;
+      color: #0241ff;
       cursor: pointer;
       z-index: 110; /* Certifique-se de que ele fique acima de outros elementos */
     }
@@ -257,9 +257,10 @@
       padding-top: 20px;
       width: 100%;
       height: 50%;
-      background-color: rgba(230, 228, 228, 0.9);
+      background-color: rgba(0, 34, 94, 0.9);
       justify-content: center;
       align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
       opacity: 0.8;
       transform: translateX(100%);
       transition: transform 0.3s ease-in-out;

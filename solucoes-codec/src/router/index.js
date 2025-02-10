@@ -21,6 +21,11 @@ const routes = [
     name: 'PortifolioPage',
     component: () => import('@/views/ContactPage.vue') // rota para a página Portifolio
   },
+  {
+    path: '/servicos',
+    name: 'ServicosPage',
+    component: () => import('@/views/ServicosPage.vue') // rota para a página Portifolio
+  },
 ];
 
 const router = createRouter({
