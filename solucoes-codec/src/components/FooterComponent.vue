@@ -17,7 +17,8 @@
       <p>Rua Desembargador Luis Felismino Cabral N 32, Manaus-AM</p>
       <div class="contato">
         <p>Email: <a href="mailto:contato@codecsolucoes.com">contato@codecsolucoes.com</a></p>
-        <p>Telefone: (92) 92984-7130</p>
+        <p>Telefone: (92) 98471-3059</p>
+        <p>Telefone: (64) 9285-1379</p>
         <div class="redes-sociais">
           <a href="https://www.instagram.com/codecsolucoestecnologicas/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da CODEC">
             <img
