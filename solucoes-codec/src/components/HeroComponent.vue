@@ -10,6 +10,7 @@
           loop
           autoplay
           @click="toggleVideo"
+          disablePictureInPicture
         ></video>
   
         <!-- Texto centralizado sobre o vídeo -->
@@ -89,6 +90,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    filter: brightness(0.8) sepia(0.3) hue-rotate(190deg) saturate(1.5); /* Filtro azulado */
   }
   
   /* Texto centralizado */
@@ -103,7 +105,7 @@
     z-index: 10;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 80%; /* Limita a largura do texto */
-    opacity: 0.8; /* Transparência do texto */
+    opacity: 0.9; /* Transparência do texto */
   }
   
   .centered-text h1 {
@@ -160,6 +162,24 @@
     transform: scale(1.07);
     animation: none; /* Pausa a animação ao passar o mouse */
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.996), 0 0 40px rgb(255, 255, 255), 0 0 60px rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Ícone de Play */
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    z-index: 20;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .play-icon:hover {
+    opacity: 1;
   }
   
   /* Responsividade */
