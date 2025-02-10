@@ -73,7 +73,7 @@
   /* Container do vídeo */
   .video-container {
     position: relative;
-    width: 99.1vw; /* Cobre toda a largura da viewport */
+    width: 100%; /* Cobre toda a largura da viewport */
     height: 100vh; /* Cobre toda a altura da viewport */
     overflow: hidden; /* Garante que nada ultrapasse o container */
     display: flex;

@@ -16,11 +16,10 @@
           >
             <img
               src="@/assets/images/logoCodec.jpeg"
-              alt="Logo da Construtora Vieira"
+              alt="Logo da CODEC"
               class="logo1"
               :style="logoStyle"
             />
-            
           </div>
         </div>
       </div>
@@ -85,10 +84,11 @@
       };
   
       const logoStyle = computed(() => ({
-    filter: `drop-shadow(${shadowX.value}px ${shadowY.value}px 350px rgba(2, 11, 181, 0.9))`, // Sombra mais ampla e opaca
-    transform: isLogoAnimating.value ? "scale(1.2)" : "scale(1)", // Efeito de escala opcional
-    transition: "transform 0.3s ease, filter 0.1s ease-out",
-  }));
+        filter: `drop-shadow(${shadowX.value}px ${shadowY.value}px 20px rgba(2, 11, 181, 0.9))`, // Sombra dinâmica
+        transform: isLogoAnimating.value ? "scale(1.1)" : "scale(1)", // Efeito de escala
+        transition: "transform 0.3s ease, filter 0.1s ease-out",
+      }));
+  
       const createGradientEffect = () => {
         const canvas = document.getElementById("gradient-canvas");
         if (!canvas) return;
@@ -187,96 +187,87 @@
     align-items: center;
   }
   
-  
   .logo1 {
     width: 100px;
     height: 100px;
     object-fit: contain;
     margin-top: 20px;
     border-radius: 100%;
-    }
-  
-  .circle-text {
-    text-align: center;
-    
   }
-   
   
-   
-    .nav-menu {
-      display: flex;
-      font-size: 12px;
-      align-items: center;
-      gap: 20px;
-    }
-    
-    .nav-links {
-      font-size: 16px;
-      display: flex;
-      list-style: none;
-      gap: 20px;
-    }
-    
-    .menu-item {
-      text-decoration: none;
-      color:#fbfbfb;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.2rem;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    
-    .menu-item:hover {
-      color: #0a5cb9;
-    }
-    /* Estilo padrão: botão hambúrguer oculto em telas maiores */
-    .hamburger {
-      padding-top: 30px;
-      display: none; /* Oculta o botão por padrão */
-    }
-    
-    /* Exibe o botão hambúrguer em telas menores que 700px */
-    @media (max-width: 700px) {
-     
+  .nav-menu {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-links {
+    font-size: 16px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    text-decoration: none;
+    color: #fbfbfb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .menu-item:hover {
+    color: #0a5cb9;
+  }
+  
+  /* Estilo padrão: botão hambúrguer oculto em telas maiores */
+  .hamburger {
+    padding-top: 30px;
+    display: none; /* Oculta o botão por padrão */
+  }
+  
+  /* Exibe o botão hambúrguer em telas menores que 700px */
+  @media (max-width: 700px) {
     .logo1 {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-      .hamburger {
-        display: block; /* Exibe o botão */
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        font-size: 1.5rem;
-        background: none;
-        border: none;
-        color: #ffffff;
-        cursor: pointer;
-        z-index: 110; /* Certifique-se de que ele fique acima de outros elementos */
-      }
-    
-      .nav-links {
-        flex-direction: column; /* Configuração para o menu hambúrguer */
-        position: fixed;
-        top: 0;
-        right: 0;
-        padding-top: 20px;
-        width: 100%;
-        height: 50%;
-        background-color: rgba(230, 228, 228, 0.9);
-        justify-content: center;
-        align-items: center;
-        opacity: 0.8; 
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
-        z-index: 100; /* Ajuste da ordem */
-      }
-    
-      .nav-links.show {
-        transform: translateX(0); /* Exibe o menu */
-      }
+  
+    .hamburger {
+      display: block; /* Exibe o botão */
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: #ffffff;
+      cursor: pointer;
+      z-index: 110; /* Certifique-se de que ele fique acima de outros elementos */
     }
-    
-    </style>
-    
+  
+    .nav-links {
+      flex-direction: column; /* Configuração para o menu hambúrguer */
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding-top: 20px;
+      width: 100%;
+      height: 50%;
+      background-color: rgba(230, 228, 228, 0.9);
+      justify-content: center;
+      align-items: center;
+      opacity: 0.8;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 100; /* Ajuste da ordem */
+    }
+  
+    .nav-links.show {
+      transform: translateX(0); /* Exibe o menu */
+    }
+  }
+  </style>
