@@ -27,7 +27,7 @@
   
         <!-- Ícone de Play (aparece apenas quando o vídeo está pausado) -->
         <div v-if="!isPlaying" class="play-icon" @click="toggleVideo">
-          ▶
+           
         </div>
       </div>
     </section>
